@@ -39,6 +39,9 @@ img {
 .page-header {
   background: var(--white-background);
   border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -222,6 +225,9 @@ address .link:hover {
 }
 
 .advantages-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 112px;
   border-radius: 4px;
@@ -359,10 +365,7 @@ address .link:hover {
   margin-top: 8px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.socialmedia-list .item {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .socialmedia-list .item:last-child {
@@ -370,7 +373,9 @@ address .link:hover {
 }
 
 .socialmedia-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   padding: 12px;
@@ -383,6 +388,10 @@ address .link:hover {
   background-color: var(--pressed-state);
 }
 
+.socialmedia-icon {
+  fill: var(--light);
+}
+
 /* Customers */
 
 .customers-section {
@@ -393,7 +402,7 @@ address .link:hover {
   font-size: 36px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
@@ -410,10 +419,10 @@ address .link:hover {
   align-items: center;
   padding: 0;
   margin: 0;
+  gap: 24px;
 }
 
 .customers-list .item {
-  margin-right: 24px;
   width: calc((100% - 120px) / 6);
 }
 .customers-list .item:last-child {
@@ -421,10 +430,13 @@ address .link:hover {
 }
 
 .customers-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 168px;
   height: 88px;
   border-radius: 4px;
+  color: var(--customers-icon);
   border: 1px solid var(--customers-icon);
   padding: 16px 32px;
 }
@@ -432,10 +444,11 @@ address .link:hover {
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--pressed-state);
+  color: var(--pressed-state);
 }
 
 .customers-icon {
-  fill: var(--customers-icon);
+  fill: currentColor;
 }
 
 .customers-icon:hover,
@@ -460,9 +473,15 @@ address .link:hover {
   letter-spacing: 0.02em;
   color: var(--light);
   max-width: 264px;
+  margin: 0;
 }
+
 .footer-logo-color {
   color: var(--light);
+}
+
+.footer-container {
+  margin-right: 120px;
 }
 
 .socialmedia-container {
@@ -470,12 +489,12 @@ address .link:hover {
   flex-wrap: wrap;
   width: 208px;
   justify-content: center;
-  text-align: center;
+  margin-left: auto;
 }
 
-.footer-socialmedia-title {
+.footer-socialmedia-text {
   color: var(--white-background);
-  line-height: 24px;
+  line-height: 1.5;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -484,19 +503,42 @@ address .link:hover {
   margin-bottom: 16px;
 }
 
+.socialmedia-container {
+  display: flex;
+  padding: 0;
+  margin-right: 692px;
+  margin-left: auto;
+}
+
 .footer-socialmedia-list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 16px;
 }
 
 .footer-socialmedia-list .item {
-  margin-right: 16px;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-socialmedia-list .item:last-child {
   margin-right: 0;
+}
+
+.footer-socialmedia-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.footer-socialmedia-link:focus {
+  background-color: var(--success);
 }
 
 /* Styles for portfolio.html */
@@ -566,13 +608,6 @@ address .link:hover {
   border: 1px solid var(--accent);
 }
 
-.portfolio .item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
 .portfolio .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
@@ -585,6 +620,17 @@ address .link:hover {
   padding: 32px 16px;
   border: 1px solid var(--accent);
   border-top: none;
+}
+
+.portfolio .link {
+  display: block;
+}
+
+.portfolio .link:hover,
+.portfolio .link:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfoliocard-title {
