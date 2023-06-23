@@ -129,7 +129,7 @@ address .link {
   text-decoration: none;
   color: var(--text);
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 address .link:focus,
@@ -394,7 +394,7 @@ address .link:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 40px;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
   color: var(--dark);
@@ -479,7 +479,7 @@ address .link:hover {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -522,7 +522,7 @@ address .link:hover {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-align: justify;
   border-radius: 4px;
   padding: 12px 24px;
@@ -599,6 +599,6 @@ address .link:hover {
 .portfoliocard-text {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: var(--subtle-text);
 }
