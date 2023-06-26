@@ -486,6 +486,7 @@ address .link:hover {
 }
 
 .footer-container {
+  min-width: 264px;
   margin-right: 120px;
 }
 
