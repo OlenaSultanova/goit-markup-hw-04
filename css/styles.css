@@ -130,7 +130,7 @@ img {
 
 address .link {
   text-decoration: none;
-  color: var(--text);
+  color: var(--subtle-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -507,6 +507,7 @@ address .link:hover {
 .footer-socialmedia-list {
   display: flex;
   list-style: none;
+  margin: 0;
   padding: 0;
   gap: 16px;
 }
